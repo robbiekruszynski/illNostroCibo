@@ -1,4 +1,9 @@
-.makeStyles-root-180 {
-  /* border: 1px solid red; */
+/* .makeStyles-root-180 {
+  /* justify-content: center;
+  border: 1px solid blue; */
+
+.makeStyles-paper-48 {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }

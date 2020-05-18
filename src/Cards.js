@@ -15,8 +15,10 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-// import frenchOmlelet from "./images/frenchOmlelet.jpg";
+// import FALLBACK_IMAGE from "./images/frenchOmlelet.jpg";
+// import frenchOmlelet from "./public/frenchOmlelet.jpg";
 
+// console.log(frenchOmlelet);
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -47,6 +49,7 @@ export default function RecipeReviewCard() {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+  // const onMediaFallback = (event) => (event.target.src = FALLBACK_IMAGE);
 
   return (
     <Card className={classes.root}>
@@ -65,10 +68,13 @@ export default function RecipeReviewCard() {
         subheader="May 17th 2020"
       />
       <CardMedia
+        style={{}}
         className={classes.media}
-        // image={frenchOmlelet}
-        
+        // image={require("frenchOmlelet.jpg")}
+        // image="frenchOmlelet.jpg"
+        // src={require("./public/frenchOmlelet.jpg")}
         title="Breakfest"
+        // onError={onMediaFallback}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
