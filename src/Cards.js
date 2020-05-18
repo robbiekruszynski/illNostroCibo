@@ -15,9 +15,10 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import img from "./frenchOmlelet.jpg";
+
 // import FALLBACK_IMAGE from "./images/frenchOmlelet.jpg";
 // import frenchOmlelet from "./public/frenchOmlelet.jpg";
-
 // console.log(frenchOmlelet);
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
+    marginTop: "30",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -67,10 +69,10 @@ export default function RecipeReviewCard() {
         title="French Omlette"
         subheader="May 17th 2020"
       />
+
       <CardMedia
-        style={{}}
         className={classes.media}
-        // image={require("frenchOmlelet.jpg")}
+        image={img}
         // image="frenchOmlelet.jpg"
         // src={require("./public/frenchOmlelet.jpg")}
         title="Breakfest"
