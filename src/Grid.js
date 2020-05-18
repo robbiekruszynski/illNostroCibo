@@ -44,7 +44,7 @@ export default function NestedGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={5}>
-        <Grid container item xs={12} spacing={5}>
+        <Grid container item xs={12} spacing={3}>
           <FormRow />
         </Grid>
         <Grid container item xs={12} spacing={3}>

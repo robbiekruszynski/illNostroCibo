@@ -4,6 +4,7 @@ import "./App.css";
 import Cards from "./Cards";
 import NavBar from "./Nav";
 import Grid from "./Grid";
+import Modal from "./ModalOne";
 import img from "./consensys.png";
 function App() {
   return (

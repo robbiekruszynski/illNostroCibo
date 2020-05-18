@@ -1,5 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import "./Cards.css";
+
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -15,11 +17,11 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import ModalOne from "./ModalOne.js";
+import ModalTwo from "./ModalTwo.js";
+
 import img from "./frenchOmlelet.jpg";
 
-// import FALLBACK_IMAGE from "./images/frenchOmlelet.jpg";
-// import frenchOmlelet from "./public/frenchOmlelet.jpg";
-// console.log(frenchOmlelet);
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -84,6 +86,10 @@ export default function RecipeReviewCard() {
           together with your guests. Add 1 cup of frozen peas along with the
           mussels, if you like.
         </Typography>
+        <div className="Modals">
+          <ModalOne />
+          <ModalTwo />
+        </div>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
